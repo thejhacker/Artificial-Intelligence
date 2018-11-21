@@ -57,7 +57,7 @@ cuda下载地址 https://developer.nvidia.com/cuda-92-download-archive？target_
 <br>
 <br>
 <br>
-![](https://github.com/thejhacker/Artificial-Intelligence/raw/master/Image/004.PNG)<br>
+![](https://github.com/thejhacker/Artificial-Intelligence/raw/master/Image/004.png)<br>
 <br>
 <br>
 $ chmod +x cuda_9.2.148_396.37_linux.run<br>
@@ -97,7 +97,7 @@ $ ./deviceQuery<br>
 第四步：安装cuDNN 7.4.1
 ----
 上官网https://developer.nvidia.com/rdp/cudnn-download下载以下三个文件<br>
-![](https://github.com/thejhacker/Artificial-Intelligence/raw/master/Image/006.PNG)<br>
+![](https://github.com/thejhacker/Artificial-Intelligence/raw/master/Image/006.png)<br>
 <br>
 <br>
 $ sudo dpkg -i libcudnn7_7.4.1.5-1+cuda9.2_amd64.deb (the runtime library)<br>
