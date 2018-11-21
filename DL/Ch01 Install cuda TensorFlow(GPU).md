@@ -29,7 +29,31 @@ source ~/.bashrc 激活个人用户的环境变量<br>
 ![](https://github.com/thejhacker/Artificial-Intelligence/raw/master/Image/002.PNG)
 <br>
 <br>
-第二步：安装Python虚拟环境（virtualenv）
+<br>
+<br>
+第二步：使用conda的Python虚拟环境（virtualenv）
 ----
+<br>
+使用 conda create -n your_env_name python=X.X（2.7、3.6等)<br>
+命令创建python版本为X.X、名字为your_env_name的虚拟环境。<br>
+your_env_name文件可以在Anaconda安装目录envs文件下找到。<br>
+
+conda create -n tensorflow python=3.6<br>
+<br>
+<br>
+<br>
+source activate tensorflow 激活虚拟环境<br>
+deactivate                 退出虚拟环境<br>
+![](https://github.com/thejhacker/Artificial-Intelligence/raw/master/Image/003.PNG)<br>
+<br>
+<br>
+conda install -n your_env_name [package]即可安装package到your_env_name中<br>
+<br>
+<br>
+<br>
+第三步：安装cuda（英伟达的计算平台）
+----
+    
+
 
 
