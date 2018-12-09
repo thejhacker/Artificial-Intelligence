@@ -1,0 +1,11 @@
+Meier, R., Bauer, S., Slotboom, J., Wiest, R., Reyes, M.: Appearance-and contextsensitive features for brain tumor segmentation. In: BraTS Challenge Manuscripts,
+pp. 20¨C26 (2014)
+
+Tustison, N.J., Shrinidhi, K., Wintermark, M., Durst, C.R., Kandel, B.M., Gee,
+J.C., Grossman, M.C., Avants, B.B.: Optimal symmetric multimodal templates
+and concatenated random forests for supervised brain tumor segmentation (simplified) with antsr. Neuroinformatics pp. 1¨C17 (2014)
+
+Zikic, D., Glocker, B., Konukoglu, E., Criminisi, A., Demiralp, C., Shotton,
+J., Thomas, O.M., Das, T., Jena, R., Price, S.J.: Decision Forests for TissueSpecific Segmentation of High-Grade Gliomas in Multi-channel MR. In: Ayache,
+N., Delingette, H., Golland, P., Mori, K. (eds.) MICCAI 2012, Part III. LNCS, vol.
+7512, pp. 369¨C376. Springer, Heidelberg (2012)

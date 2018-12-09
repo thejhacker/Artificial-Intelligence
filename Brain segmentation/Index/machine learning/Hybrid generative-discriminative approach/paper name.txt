@@ -1,0 +1,4 @@
+Bakas, S., Zeng, K., Sotiras, A., Rathore, S., Akbari, H., Gaonkar, B., Rozycki,
+M., Pati, S., Davazikos, C.: Segmentation of gliomas in multimodal magnetic resonance imaging volumes based on a hybrid generative-discriminative framework. In:
+Proceeding of the Multimodal Brain Tumor Image Segmentation Challenge, pp.
+5¨C12 (2015)
