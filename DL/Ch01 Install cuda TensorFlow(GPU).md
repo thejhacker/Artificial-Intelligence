@@ -68,7 +68,8 @@ $ ./cuda_9.2.148_396.37_linux.run --extract=$HOME<br>
 <br>
 <br>
 <br>
-驱动安装<br>
+驱动安装
+--
 卸载旧驱动<br>
 ./NVIDIA-Linux-x86_64-396.37.run --uninstall <br>
 <br>
@@ -106,7 +107,8 @@ sudo service lightdm stop<br>
 <br>
 <br>
 <br>
-安装<br>
+安装cuda
+--
 sudo ./cuda-linux.9.2.148-24330188.run<br>
 sudo ./cuda-samples.9.2.148-24330188-linux.run<br>
 <br>
@@ -131,6 +133,8 @@ $ cd /usr/local/cuda/samples/bin/x86_64/linux/release<br>
 $ ./deviceQuery<br>
 ![](https://github.com/thejhacker/Artificial-Intelligence/raw/master/Image/005.PNG)<br>
 <br>
+其中可能会出现缺少gcc或者g++,只sudo apt-get install 安装相应的软件即可<br>
+
 <br>
 
 第四步：安装cuDNN 7.4.1
