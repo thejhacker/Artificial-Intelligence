@@ -64,7 +64,46 @@ $ chmod +x cuda_9.2.148_396.37_linux.run<br>
 $ ./cuda_9.2.148_396.37_linux.run --extract=$HOME<br>
 <br>
 <br>
-解压出来有三个文件分别是NVIDIA-Linux-x86_64-396.37.run（显卡驱动不装），cuda-linux.9.2.148-24330188.run（需要安装），cuda-samples.9.2.148-24330188-linux.run（需要安装）<br>
+解压出来有三个文件分别是NVIDIA-Linux-x86_64-396.37.run（显卡驱动如果有驱动则不需安装否则请安装），cuda-linux.9.2.148-24330188.run（需要安装），cuda-samples.9.2.148-24330188-linux.run（需要安装）<br>
+<br>
+<br>
+<br>
+驱动安装<br>
+卸载旧驱动<br>
+./NVIDIA-Linux-x86_64-396.37.run --uninstall <br>
+<br>
+<br>
+安装依赖<br>
+ sudo apt-get update <br>
+ sudo apt-get install dkms build-essential linux-headers-generic<br>
+ sudo apt-get install gcc-multilib xorg-dev<br>
+ <br>
+ <br>
+ 禁用noueau驱动<br>
+ sudo vi /etc/modprobe.d/blacklist.conf<br>
+ 在blacklist.conf文件下添加下面语句<br>
+ blacklist nouveau<br>
+ blacklist lbm-nouveau<br>
+ options nouveau modeset=0<br>
+ alias nouveau off<br>
+ alias lbm-nouveau off<br>
+ <br>
+ <br>
+ <br>
+ #禁用nouveau 内核模块<br>
+echo options nouveau modeset=0 | sudo tee -a /etc/modprobe.d/nouveau-kms.conf<br>
+sudo update-initramfs -u<br>
+reboot #重启<br>
+lsmod |grep nouveau #无显示则成功 <br>
+<br>
+关闭图形界面<br>
+按 CTRL + ALT + F1 键登录<br>
+sudo service lightdm stop<br>
+<br>
+然后就sudo ./NVIDIA-Linux-x86_64-396.37.run --dkms --no-opengl-files就好了<br>
+一开始preinstall会报错，这个不用管它，所有人都会报错（什么鬼）<br>
+<br>
+<br>
 <br>
 <br>
 安装<br>
@@ -124,8 +163,10 @@ source ~/.bashrc<br>
 <br>
 第五步：安装tensorflow
 ----
-要确定python版本为3.5<br>
-pip3 install --upgrade tensorflow-gpu<br>
+要确定python版本为3.6<br>
+使用这个地址的https://github.com/zychen423/TF-1.9-cp36-cuda9.2-wheel/blob/master/tensorflow-1.9.0-cp36-cp36m-linux_x86_64.whl包来作为tensorflow安装工具<br>
+具体是对下载下来的工具使用 sudo apt-get install xxx(包的名字)<br>
+<br>
 <br>
 
 
