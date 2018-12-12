@@ -53,6 +53,14 @@ conda install -n your_env_name [package]即可安装package到your_env_name中<b
 <br>
 第三步：安装cuda（英伟达的计算平台）
 ----
+<br>
+<br>
+请注意下载cuda9.0版本，现在是最安全的版本，笔者试过9.2，虽然最后也能编译通过，但是在github上的一些项目上还是会报错<br>
+请注意下载cuda9.0版本，现在是最安全的版本，笔者试过9.2，虽然最后也能编译通过，但是在github上的一些项目上还是会报错<br>
+请注意下载cuda9.0版本，现在是最安全的版本，笔者试过9.2，虽然最后也能编译通过，但是在github上的一些项目上还是会报错<br>
+<br>
+<br>
+<br>
 cuda下载地址 https://developer.nvidia.com/cuda-92-download-archive？target_os=Linux&target_arch=x86_64&target_distro=Ubuntu&target_version=1604&target_type=runfilelocal<br>
 <br>
 <br>
