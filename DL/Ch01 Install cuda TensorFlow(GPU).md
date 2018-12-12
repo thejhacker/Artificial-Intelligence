@@ -109,6 +109,12 @@ sudo service lightdm stop<br>
 <br>
 安装cuda
 --
+<br>
+请注意下载cuda9.0版本，现在是最安全的版本，笔者试过9.2，虽然最后也能编译通过，但是在github上的一些项目上还是会报错<br>
+请注意下载cuda9.0版本，现在是最安全的版本，笔者试过9.2，虽然最后也能编译通过，但是在github上的一些项目上还是会报错<br>
+请注意下载cuda9.0版本，现在是最安全的版本，笔者试过9.2，虽然最后也能编译通过，但是在github上的一些项目上还是会报错<br>
+<br>
+<br>
 sudo ./cuda-linux.9.2.148-24330188.run<br>
 sudo ./cuda-samples.9.2.148-24330188-linux.run<br>
 <br>
@@ -137,17 +143,21 @@ $ ./deviceQuery<br>
 
 <br>
 
-第四步：安装cuDNN 7.4.1
+第四步：安装cuDNN 7.1.3
 ----
 上官网https://developer.nvidia.com/rdp/cudnn-download下载以下三个文件<br>
 ![](https://github.com/thejhacker/Artificial-Intelligence/raw/master/Image/006.png)<br>
 <br>
 <br>
-$ sudo dpkg -i libcudnn7_7.4.1.5-1+cuda9.2_amd64.deb (the runtime library)<br>
 <br>
-$ sudo dpkg -i libcudnn7-dev_7.4.1.5-1+cuda9.2_amd64.deb (the developer library)<br>
+注意这里应该装图中相应在7.13版本<br>
 <br>
-$ sudo dpkg -i libcudnn7-doc_7.4.1.5-1+cuda9.2_amd64.deb (the code samples)<br>
+<br>
+$ sudo dpkg -i libcudnn7_7.1.3.16-1+cuda9.0_amd64.deb (the runtime library)<br>
+<br>
+$ sudo dpkg -i libcudnn7-dev_7.1.3.16-1+cuda9.0_amd64 (the developer library)<br>
+<br>
+$ sudo dpkg -i libcudnn7-doc_7.1.3.16-1+cuda9.0_amd64.deb (the code samples)<br>
 <br>
 <br>
 测试<br>
@@ -168,8 +178,7 @@ source ~/.bashrc<br>
 第五步：安装tensorflow
 ----
 要确定python版本为3.6<br>
-使用这个地址的https://github.com/zychen423/TF-1.9-cp36-cuda9.2-wheel/blob/master/tensorflow-1.9.0-cp36-cp36m-linux_x86_64.whl包来作为tensorflow安装工具<br>
-具体是对下载下来的工具使用 sudo apt-get install xxx(包的名字)<br>
+sudo apt-get install tensorflow-gpu<br>
 <br>
 <br>
 
